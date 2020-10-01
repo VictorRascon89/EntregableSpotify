@@ -1,1 +1,162 @@
-!
+body{
+    width: 100%;
+    height: auto 0;
+   
+
+}
+ #navbar{
+     height: 10%;
+     width: 100%;
+     display: inline-grid;
+     grid-template-columns:1fr;
+
+
+   
+     background-color: rgb(80, 155, 245);
+ }
+
+.nav-container{
+    width: 70%;
+    margin: 0 auto;
+    display: inline-grid;
+    grid-template-columns:1fr 1fr;
+    background-color: orange;
+    
+ }
+ .nav-items{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+ #logo{
+    height: 50px;
+}
+ 
+
+ 
+ .containerAd{
+     width: 70%;
+     margin: 0 auto;
+     background-color: purple;
+ }
+ 
+ .promo h1{
+
+    font-size: 80px;
+ }
+ 
+ .cancelation h2{
+    font-size: 30px;
+
+ }
+ 
+ .buttonPrincipal{
+    background-color: rgb(30, 215, 96);
+    border:0px;
+    border-radius: 500px;
+    font-size: 14px;
+    font-weight: 700;
+    transition-duration: 33ms;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 17px 48px;
+
+ }
+ 
+ .buttonPrincipal:hover {
+    background-color: blue;
+
+ }
+
+ .sceenSection{
+    width: 70%;
+    margin: 0 auto;
+    background-color: green;
+ }
+
+ .screen{
+     display: inline-grid;
+     grid-template-rows: 1fr 3fr;
+
+ }
+ .imagenPremium{
+    width: 142px;
+    height: 142px;
+
+ }
+
+ .icons{
+     display: inline-grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     background-color: hotpink;
+     list-style: none;
+
+ }
+ 
+ 
+ .principalText{
+    box-sizing: border-box;
+    color: rgb(34, 35, 38);
+    font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 31.5px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 10px
+
+ }
+ 
+ .secondText{
+    box-sizing: border-box;
+    color: rgb(34, 35, 38);
+    font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    width: 207.233px
+ }
+ .ratesIndividual{
+    width: 70%;
+    margin: 0 auto;
+ }
+
+ .containerRatesIndividual{
+    width: 100%;
+    display: inline-grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: lawngreen;
+ }
+
+ .infoRatesIndividual{
+    display: inline-grid;
+    grid-template-rows: 0.5fr 0.5fr;
+ }
+ .tarifasRatesIndividual{
+     display: inline-grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+
+ }
+.eleccion p{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1.28px;
+    line-height: 1;
+    text-align: center;
+    margin: 0px;
+}
+.infoEleccion p{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0px;
+    text-align: center;
+}
+.tarifa{
+    display: inline-grid;
+    grid-template-rows: 0.5fr 0.5fr 1.5fr 4fr 1fr;
+}
