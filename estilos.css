@@ -1,162 +1,306 @@
 body{
-    width: 100%;
-    height: auto 0;
-   
+   width: 100%;
+   height: auto 0;
+  
 
 }
- #navbar{
-     height: 10%;
-     width: 100%;
-     display: inline-grid;
-     grid-template-columns:1fr;
-
-
-   
-     background-color: rgb(80, 155, 245);
- }
+#navbar{
+    height: 10%;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns:1fr;  
+    background-color: rgb(80, 155, 245);
+    
+}
 
 .nav-container{
-    width: 70%;
+   width: 80%;
+   margin: 0 auto;
+   display: inline-grid;
+   grid-template-columns:1fr 1fr;
+   background-color: teal;
+   box-sizing: border-box;
+   color : rgb(29,185,84)
+
+      
+}
+.nav-items{
+   display: inline-grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   list-style: none;
+}
+
+#logo{
+   height: 50px;
+   color: rgb(255,255,255);
+   font-weight: 400;
+   box-sizing: border-box;
+
+}
+
+
+
+.containerAd{
+    width: 80%;
     margin: 0 auto;
+    background-color: rgb(80, 155,245);
+
+
+}
+
+.promo h1{
+   font-size: 80px;
+   font-weight: 900;
+   color:rgb(255,255,255);
+   display: inline-block;
+   font-family:  Helvetica, Arial, sans-serif;
+   box-sizing : border-box;   
+   
+}
+
+.cancelation{
+   box-sizing: border-box;
+   color: white;
+   font-family: ;spotify-circular, Helvetica, Arial, sans-serif;
+   font-size: 24px;
+   font-weight: 600;
+   letter-spacing: 0,25px;
+   line-height: 36px;
+   width: 661px;
+   max-width: 100%;
+
+}
+
+.buttonPrincipal{
+   background-color: rgb(30, 215, 96);
+   border:0px;
+   border-radius: 500px;
+   font-size: 14px;
+   font-weight: 700;
+   transition-duration: 33ms;
+   letter-spacing: 2px;
+   text-align: center;
+   padding: 17px 48px;
+
+}
+
+.buttonPrincipal:hover {
+   background-color: blue;
+
+}
+
+.sceenSection{
+   width: 80%;
+   margin: 0 auto;
+   background-color: green;
+}
+
+.screen{
     display: inline-grid;
-    grid-template-columns:1fr 1fr;
-    background-color: orange;
-    
- }
- .nav-items{
+    grid-template-rows: 1fr 3fr;
+
+}
+.imagenPremium{
+   width: 142px;
+   height: 142px;
+
+}
+
+.icons{
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: white;
     list-style: none;
+
 }
 
- #logo{
-    height: 50px;
+
+.principalText{
+   box-sizing: border-box;
+   color: rgb(34, 35, 38);
+   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 31.5px;
+   list-style-image: none;
+   list-style-position: outside;
+   list-style-type: none;
+   margin-bottom: 10px
+
 }
- 
 
- 
- .containerAd{
-     width: 70%;
-     margin: 0 auto;
-     background-color: purple;
- }
- 
- .promo h1{
+.screenContainer{
+   background-color: white;
 
-    font-size: 80px;
- }
- 
- .cancelation h2{
-    font-size: 30px;
+}
 
- }
- 
- .buttonPrincipal{
-    background-color: rgb(30, 215, 96);
-    border:0px;
-    border-radius: 500px;
-    font-size: 14px;
-    font-weight: 700;
-    transition-duration: 33ms;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 17px 48px;
+.screenContainer h1{
+   font-size: 48px;
+   font-weight: 900;
+   color: black
+   display: inline-block;
+   font-family: Helvetica, Arial, sans-serif;
+   box-sizing: border-box;
+   background-color: white;
 
- }
- 
- .buttonPrincipal:hover {
-    background-color: blue;
+   }
 
- }
+.secondText{
+   box-sizing: border-box;
+   color: rgb(34, 35, 38);
+   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   list-style-image: none;
+   list-style-position: outside;
+   list-style-type: none;
+   width: 207.233px
+}
+.ratesIndividual{
+   width: 80%;
+   height: auto;
+   margin: 0 auto;
+   background-color: rgb(248,248,248);
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
 
- .sceenSection{
-    width: 70%;
-    margin: 0 auto;
-    background-color: green;
- }
+}
 
- .screen{
-     display: inline-grid;
-     grid-template-rows: 1fr 3fr;
+.containerRatesIndividual{
+   width: 100%;
+   display: inline-grid;
+   grid-template-rows: 0,5fr 0,5fr;
+   background-color: lawngreen;
+}
 
- }
- .imagenPremium{
-    width: 142px;
-    height: 142px;
-
- }
-
- .icons{
-     display: inline-grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-     background-color: hotpink;
-     list-style: none;
-
- }
- 
- 
- .principalText{
-    box-sizing: border-box;
-    color: rgb(34, 35, 38);
-    font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 31.5px;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-    margin-bottom: 10px
-
- }
- 
- .secondText{
-    box-sizing: border-box;
-    color: rgb(34, 35, 38);
-    font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-    width: 207.233px
- }
- .ratesIndividual{
-    width: 70%;
-    margin: 0 auto;
- }
-
- .containerRatesIndividual{
-    width: 100%;
+.infoRatesIndividual{
+   display: inline-grid;
+   
+}
+.tarifasRatesIndividual{
     display: inline-grid;
-    grid-template-rows: 1fr 2fr;
-    background-color: lawngreen;
- }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
- .infoRatesIndividual{
-    display: inline-grid;
-    grid-template-rows: 0.5fr 0.5fr;
- }
- .tarifasRatesIndividual{
-     display: inline-grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-
- }
+    
+}
+.eleccion{
+   width: 0 auto;
+   height: 5p%;
+}
 .eleccion p{
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: -1.28px;
-    line-height: 1;
-    text-align: center;
-    margin: 0px;
+   width: 0 auto;
+   height: 100px;
+   font-size: 32px;
+   font-weight: bold;
+   letter-spacing: -1.28px;
+   line-height: 1;
+   text-align: center;
+   margin: 0px;
 }
 .infoEleccion p{
-    font-size: 16px;
-    font-weight: normal;
-    margin: 10px 0px;
-    text-align: center;
+   font-size: 16px;
+   font-weight: normal;
+   margin: 10px 0px;
+   text-align: center;
+   width: 0 auto;
 }
 .tarifa{
-    display: inline-grid;
-    grid-template-rows: 0.5fr 0.5fr 1.5fr 4fr 1fr;
+   display: inline-grid;
+   grid-template-rows: 0.5fr 0.5fr 1.5fr 4fr 1fr;
 }
+.mesGratis button{
+   background-color: rgb(46,119,208);
+   border-bottom-left-radius: 4px;
+   border-bottom-right-radius: 4px;
+   border-top-left-radius: 4px;
+   border-top-right-radius:4px;
+   box-sizing: border-box;
+   color: white;
+   font-size: 14px;
+   font-weight: 900;
+   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+}
+.tarifasRatesIndividual{
+   background-color: white;
+   width: auto;
+   padding-top: 20;
+   padding-left: 20px;
+   padding-right: 20px;
+   box-shadow:rgb(255, 255, 255) 0px 8px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+   line-height: 1,5;
+   color: black;
+   background-color: rgb(255, 255, 255);
+   box-shadow: rgb(255, 255, 255) 0px -9px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px 0px
+
+}
+
+
+.contratarTarifa button{
+   box-sizing: border-box;
+   color: rgb(34, 35, 38);
+   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   overflow-wrap: break-word
+
+
+
+}
+.tipoTarifa p{
+   box-sizing: border-box;
+   color:black;
+   font-weight: 700;
+   font-family: spotify-circular,Arial, Helvetica, sans-serif;
+   font-size: 24px;
+   margin-bottom: 5px;
+
+}
+.cuotaTarifa p{
+   box-sizing: border-box;
+   color: black;
+   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 22px;
+}
+.beneficioTarifa li{
+   list-style: none;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 22px;
+
+}
+
+.bigContainerFooter{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   height: 10%;
+   width: 100%;
+   display: grid;
+
+
+}
+
+.itemFooter li{
+   display: inline-grid;
+   grid-template-columns:1fr 1fr 1fr;
+   list-style: none;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+   font-size: 12px;
+ 
+}
+.footerDerecha{
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   background-color: black;
+}
+.españa{
+   grid-template-rows: 1fr 1fr;
+}
+   
