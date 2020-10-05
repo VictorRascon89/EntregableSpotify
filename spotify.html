@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Premium</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./image/fav.ico">
 
 </head>
 
 <body>
        <!--Barra de navegador e Items-->
-    <nav id="navbar">
+    <nav id="navbar" class="navBar">
         <div class="nav-container">
             <svg id="logo" viewBox="0 0 63 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet">
                 <g fill-rule="evenodd" class="svelte-1gcdbl9">
@@ -31,17 +32,19 @@
 
     <!--Pantalla Promocion-->
 
-    <div class="containerAd">
-        <div class="promo">
-            <h1>Consigue Premium gratis 1 mes</h1>
+    <section class="promoSection">
+        <div class="containerAd">
+            <div class="promo">
+                <h1>Consigue Premium gratis 1 mes</h1>
+            </div>
+            <div class="cancelation">
+                <h2>Después, solo 9,99€/mes. Cancelas cuando quieras.</h2>
+            </div>
+            <div class="button">
+            <button class="buttonPrincipal">VER PLANES </button>
+            </div>
         </div>
-        <div class="cancelation">
-            <h2>Después, solo 9,99€/mes. Cancelas cuando quieras.</h2>
-        </div>
-        <div class="button">
-           <button class="buttonPrincipal">VER PLANES </button>
-        </div>
-    </div>
+    </section>
 
 
 
@@ -107,7 +110,7 @@
                     <p>Elige tu Premium</p>
                 </div>
                 <div class="infoEleccion">
-                    <p>Escucha in limites en tu teléfono, altavoz y otros dispositivos</p>
+                    <p>Escucha sin limites en tu teléfono, altavoz y otros dispositivos</p>
                 </div>
             </div>
             <div class="tarifasRatesIndividual">
@@ -120,7 +123,8 @@
                     </div>
                     <div class="cuotaTarifa">
                         <p>9,99 €/mes tras el plazo de la oferta</p>
-                        <p>1 cuenta</p>                    
+                        <p>1 cuenta</p>
+                        <hr/>
                     </div>
                     <div class="beneficioTarifa">
                         <ul class="contenedorDescripcion">
@@ -145,7 +149,7 @@
                         </ul>
                     </div>
                     <div class="contratarTarifa">
-                        <button>Empezar</button>
+                        <button>EMPEZAR</button>
                     </div>
                 </div>
 
@@ -158,7 +162,8 @@
                     </div>
                     <div class="cuotaTarifa">
                         <p>12,99 €/mes tras el plazo de la oferta</p>
-                        <p>2 cuentas</p>                    
+                        <p>2 cuentas</p>  
+                        <hr/>                  
                     </div>
                     <div class="beneficioTarifa">
                         <ul class="contenedorDescripcion">
@@ -183,7 +188,7 @@
                         </ul>
                     </div>
                     <div class="contratarTarifa">
-                        <button>Empezar</button>
+                        <button>EMPEZAR</button>
                     </div>
                 </div>
 
@@ -196,7 +201,8 @@
                     </div>
                     <div class="cuotaTarifa">
                         <p>14,99 €/mes tras el plazo de la oferta</p>
-                        <p>Hasta 6 cuentas</p>                    
+                        <p>Hasta 6 cuentas</p>
+                        <hr/>                    
                     </div>
                     <div class="beneficioTarifa">
                         <ul class="contenedorDescripcion">
@@ -227,7 +233,7 @@
                         </ul>
                     </div>
                     <div class="contratarTarifa">
-                        <button>Empezar</button>
+                        <button>EMPEZAR</button>
                     </div>
                 </div>
 
@@ -240,7 +246,8 @@
                     </div>
                     <div class="cuotaTarifa">
                         <p>4,99 €/mes tras el plazo de la oferta</p>
-                        <p>1 cuenta</p>                    
+                        <p>1 cuenta</p>  
+                        <hr/>                  
                     </div>
                     <div class="beneficioTarifa">
                         <ul class="contenedorDescripcion">
@@ -271,17 +278,18 @@
                         </ul>
                     </div>
                     <div class="contratarTarifa">
-                        <button>Empezar</button>
+                        <button>EMPEZAR</button>
                     </div>
                 </div>
             </div>
             <div class="terms">
-                <a href="/legal/premium-promotional-offer-terms">Rigen términos y condiciones</a>
-                <p>El mes gratis no está disponible para usuarios que ya han probado Premium</p>
+                <p><a href="/legal/premium-promotional-offer-terms">Rigen términos y condiciones.</a>
+                El mes gratis no está disponible para usuarios que ya han probado Premium</p>
             </div>
         </div>
     </section>
     <footer class="bigContainerFooter">
+        <div class="footerIzquierda">
             <ul class="derechos">
                 <li class="itemFooter">
                     <a href= https://www.spotify.com/es/legal/end-user-agreement>Legal</a>
@@ -293,10 +301,11 @@
                     <a href="https://www.spotify.com/es/legal/privacy-policy/#s13">Información sobre los anuncios</a>
                 </li>
             </ul>
+        </div>
 
-        <div clas= "footerDerecha">
+        <div class="footerDerecha">
             <ul class="españa">
-                <li class="flatEspaña">España
+                <li class="flatEspaña">España&nbsp;
                     <img src="./image/flatespaña.svg" alt="españa">
                 </li>
                 <li class="spotify2020">© 2020 Spotify AB</li>
@@ -304,6 +313,14 @@
         </div>
 
     </footer>
-    
+    <script>
+        window.onscroll = function cambiaLaBarraCuandoHagoScroll() {
+            if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+                document.getElementById("navbar").className ="navBarScroll"
+            } else {
+                document.getElementById("navbar").className ="navBar"
+            }
+        }
+    </script>
 </body>
 </html>

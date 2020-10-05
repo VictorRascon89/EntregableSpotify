@@ -1,26 +1,45 @@
 body{
    width: 100%;
-   height: auto 0;
-  
-
+   height: 100%;
+   padding: 0;
+   margin: 0;
 }
-#navbar{
-    height: 10%;
+
+.navBar{
+    height: 70px;
     width: 100%;
     display: inline-grid;
     grid-template-columns:1fr;  
     background-color: rgb(80, 155, 245);
-    
+    font-family:  Helvetica, Arial, sans-serif;
+    padding-top: 1.5%;
+    position: fixed;
+    top: 0;
+    transition: 0.4s;
 }
+
+.navBarScroll{
+   height: 70px;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns:1fr;  
+    font-family:  Helvetica, Arial, sans-serif;
+    padding-top: 1.5%;
+    position: fixed;
+    top: 0;
+    transition: 0.4s;
+   color: red;
+   background-color: rgba(80, 80, 80, 0.8);
+}
+
 
 .nav-container{
    width: 80%;
    margin: 0 auto;
    display: inline-grid;
    grid-template-columns:1fr 1fr;
-   background-color: teal;
    box-sizing: border-box;
-   color : rgb(29,185,84)
+   color : white
 
       
 }
@@ -38,14 +57,15 @@ body{
 
 }
 
-
-
+.promoSection{
+   width: 100%;
+   background-color: rgb(80, 155,245);
+}
 .containerAd{
     width: 80%;
+    height: auto;
+    padding: 2%;
     margin: 0 auto;
-    background-color: rgb(80, 155,245);
-
-
 }
 
 .promo h1{
@@ -61,18 +81,17 @@ body{
 .cancelation{
    box-sizing: border-box;
    color: white;
-   font-family: ;spotify-circular, Helvetica, Arial, sans-serif;
+   font-family: Helvetica, Arial, sans-serif;
    font-size: 24px;
    font-weight: 600;
    letter-spacing: 0,25px;
    line-height: 36px;
-   width: 661px;
-   max-width: 100%;
-
+   width: 100%;
 }
 
 .buttonPrincipal{
    background-color: rgb(30, 215, 96);
+   color: white;
    border:0px;
    border-radius: 500px;
    font-size: 14px;
@@ -82,17 +101,19 @@ body{
    text-align: center;
    padding: 17px 48px;
 
+
 }
 
 .buttonPrincipal:hover {
-   background-color: blue;
+   transform: scale(1.04);
+   background-color: rgb(30, 215, 96);
+   color: rgb(255, 255, 255);
 
 }
 
 .sceenSection{
    width: 80%;
    margin: 0 auto;
-   background-color: green;
 }
 
 .screen{
@@ -113,6 +134,8 @@ body{
     list-style: none;
 
 }
+
+
 
 
 .principalText{
@@ -137,13 +160,12 @@ body{
 .screenContainer h1{
    font-size: 48px;
    font-weight: 900;
-   color: black
-   display: inline-block;
+   color: black;
    font-family: Helvetica, Arial, sans-serif;
    box-sizing: border-box;
    background-color: white;
-
-   }
+   text-align:center;
+}
 
 .secondText{
    box-sizing: border-box;
@@ -161,32 +183,32 @@ body{
    width: 80%;
    height: auto;
    margin: 0 auto;
-   background-color: rgb(248,248,248);
    color: black;
    font-family: Arial, Helvetica, sans-serif;
 
 }
-
+/* 
 .containerRatesIndividual{
-   width: 100%;
    display: inline-grid;
    grid-template-rows: 0,5fr 0,5fr;
-   background-color: lawngreen;
-}
+} */
 
 .infoRatesIndividual{
    display: inline-grid;
-   
+   grid-template-rows: 0,5fr 1fr;
+   width: 100%;
 }
-.tarifasRatesIndividual{
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    
+.tarifasRatesIndividual{
+   display: inline-grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   width: 100%;
+   line-height: 1,5;
+   color: black;
 }
 .eleccion{
    width: 0 auto;
-   height: 5p%;
+   height: 5%;
 }
 .eleccion p{
    width: 0 auto;
@@ -207,64 +229,43 @@ body{
 }
 .tarifa{
    display: inline-grid;
+   width: 90%;
+   margin: 0 auto;
    grid-template-rows: 0.5fr 0.5fr 1.5fr 4fr 1fr;
+   border-radius: 10px;
+   padding: 3%;
+   box-shadow:white 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
 }
+
+.mesGratis{
+   width: 100%;
+}
+
 .mesGratis button{
+   margin-top: 10px;
+   height: 30px;
    background-color: rgb(46,119,208);
-   border-bottom-left-radius: 4px;
-   border-bottom-right-radius: 4px;
-   border-top-left-radius: 4px;
-   border-top-right-radius:4px;
+   border: 1px solid rgb(46,119,208);;
+   border-radius: 4px;
    box-sizing: border-box;
    color: white;
    font-size: 14px;
    font-weight: 900;
    font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
 }
-.tarifasRatesIndividual{
-   background-color: white;
-   width: auto;
-   padding-top: 20;
-   padding-left: 20px;
-   padding-right: 20px;
-   box-shadow:rgb(255, 255, 255) 0px 8px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
-   line-height: 1,5;
-   color: black;
-   background-color: rgb(255, 255, 255);
-   box-shadow: rgb(255, 255, 255) 0px -9px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px 0px
 
+.beneficioTarifa{
+   width: 100%;
 }
 
-
-.contratarTarifa button{
-   box-sizing: border-box;
+.beneficioTarifa ul{
    color: rgb(34, 35, 38);
    font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 24px;
-   overflow-wrap: break-word
-
-
-
+   height: 100%;
+   width: 100%;
+   padding: 0%;
 }
-.tipoTarifa p{
-   box-sizing: border-box;
-   color:black;
-   font-weight: 700;
-   font-family: spotify-circular,Arial, Helvetica, sans-serif;
-   font-size: 24px;
-   margin-bottom: 5px;
 
-}
-.cuotaTarifa p{
-   box-sizing: border-box;
-   color: black;
-   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 22px;
-}
 .beneficioTarifa li{
    list-style: none;
    color: black;
@@ -275,32 +276,143 @@ body{
 
 }
 
-.bigContainerFooter{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   height: 10%;
+.contratarTarifa{
+   color: rgb(34, 35, 38);
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   line-height: 24px;
    width: 100%;
-   display: grid;
-
 
 }
+.contratarTarifa button{
+   background-color: rgb(30,215,96);
+   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+   color: white;
+   border: 1px solid rgb(30,215,96);
+   border-radius: 150px;
+   font-size: 14px;
+   font-weight: 700;
+   text-align: center;
+   padding-bottom: 17px;
+   padding-left: 48px;
+   padding-right: 48px;
+   padding-top: 17px;
+   width: 100%;
+}
 
-.itemFooter li{
-   display: inline-grid;
-   grid-template-columns:1fr 1fr 1fr;
+.tipoTarifa{
+   width: 100%;
+}
+
+.tipoTarifa p{
+   box-sizing: border-box;
+   color:black;
+   font-weight: 700;
+   font-family: spotify-circular,Arial, Helvetica, sans-serif;
+   font-size: 24px;
+   margin-bottom: 5px;
+}
+.cuotaTarifa{
+   width: 100%;
+}
+
+.cuotaTarifa p{
+   width: 80%;
+   box-sizing: border-box;
+   color: black;
+   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+   font-size: 16px;
+}
+
+.cuotaTarifa hr{
+   width: 90%;
+   color: rgba(0,0,0, 0.8);
+   border-top: 1px solid rgba(0,0,0, 0.2);
+}
+
+.terms{
+   width: 100%;
+   font-size: 16px;
+   text-align: center;
+}
+
+.terms a {
    list-style: none;
    color: black;
-   font-family: Arial, Helvetica, sans-serif;
-   box-sizing: border-box;
-   font-size: 12px;
- 
 }
+
+
+.bigContainerFooter{
+   display: inline-grid;
+   grid-template-columns: 2fr 3fr;
+   height: 100px;
+   width: 100%;
+   margin: 0 auto;
+   background-color: black;
+   color: white;
+}
+
+.footerIzquierda{
+   width: 100%;
+   height: 100px;
+}
+
+.derechos{
+   width: 80%;
+   margin: 0;
+   margin-left: 10%;
+   height: 100%;
+   display: inline-grid;
+   grid-template-columns:1fr 1fr 3fr;
+   list-style: none;
+ }
+
+ .derechos li{
+   position: relative;
+   width: 100%;
+   color: rgb(145, 148, 150);
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+ }
+
+ .itemFooter a {
+  position: absolute;
+  text-decoration: none;
+  bottom: 30%;
+  color: #919496
+ }
+
+ .itemFooter a:hover {
+   color: rgba(100,100,10, 0.8);
+  }
+
+
 .footerDerecha{
    display: grid;
    grid-template-rows: 1fr 1fr;
-   background-color: black;
+   height: 100px;
 }
+
+
 .españa{
-   grid-template-rows: 1fr 1fr;
+   width: 80%;
+   margin: 0;
+   margin-right: 10%;
+   height: 100%;
+ }
+
+ .flatEspaña img {
+   width: 20px;
+   height: 20px;
+ }
+
+.españa li{
+   margin-top: 20px;
+   list-style: none;
+   box-sizing: border-box;
+   color: rgb(145, 148, 150);
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 10px;
+   text-align: right;
 }
    
