@@ -197,11 +197,7 @@ color:black;
    font-family: Arial, Helvetica, sans-serif;
 
 }
-/* 
-.containerRatesIndividual{
-   display: inline-grid;
-   grid-template-rows: 0,5fr 0,5fr;
-} */
+
 
 .infoRatesIndividual{
    display: inline-grid;
@@ -261,7 +257,7 @@ color:black;
    color: white;
    font-size: 14px;
    font-weight: 900;
-   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+   font-family: Helvetica, Arial, sans-serif;
 }
 
 .beneficioTarifa{
@@ -270,7 +266,7 @@ color:black;
 
 .beneficioTarifa ul{
    color: rgb(34, 35, 38);
-   font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+   font-family:  Helvetica, Arial, sans-serif;
    height: 100%;
    width: 100%;
    padding: 0%;
@@ -318,7 +314,7 @@ color:black;
    box-sizing: border-box;
    color:black;
    font-weight: 700;
-   font-family: spotify-circular,Arial, Helvetica, sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
    font-size: 24px;
    margin-bottom: 5px;
 }
